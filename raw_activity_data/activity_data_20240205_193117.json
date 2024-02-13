@@ -1,0 +1,17 @@
+{
+    "activity_name": "login_trial_6",
+    "activity_description": "recording another login trial",
+    "activity_path": "C:/Users/u1138322/PAF/ProjectContainer/SampleProject/sample_xml/activity.xml",
+    "event_queue": [
+        {
+            "event": "WaitForPageLoad"
+        },
+        {
+            "event": "getText",
+            "xpath": "//div[contains(@class, 'header-title')]",
+            "variable": "something",
+            "after": 0,
+            "before": 0
+        }
+    ]
+}
