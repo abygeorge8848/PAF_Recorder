@@ -8,6 +8,9 @@ python -m venv %VENV_DIR%
 echo Activating virtual environment...
 call %VENV_DIR%\Scripts\activate.bat
 
+echo Upgrading pip...
+python.exe -m pip install --upgrade pip
+
 echo Installing dependencies from requirements.txt...
 pip install -r requirements.txt
 
