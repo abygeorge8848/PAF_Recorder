@@ -190,7 +190,7 @@ if (!window.hasInjected) {
             console.log('Getting ready to backspace');
             backspaceServerSync(xpath);
         }
-        else if (e.key !== 'Shift' || e.key !== 'Control'){
+        else if (e.key === 'Enter'){
             window.recordedEvents.push(['specialKeys', Date.now(), xpath, e.key]);
             sendEventsToServerSync();
         }  

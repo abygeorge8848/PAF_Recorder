@@ -114,6 +114,7 @@ def reformat_paf_activity(event_queue, activity_name, activity_description):
         elif event["event"] == "specialKeys":
             xpath = event["xpath"]
             value = event["value"]
+            value = value.lower()
             PAF_SCRIPT += f'\t<WaitTillElement xpath="{xpath}" waitcondition="click" desc="Implementation step" expResult="NA"></WaitTillElement>\n'
             #PAF_SCRIPT += '\t<wait time="3000"></wait>\n'
             PAF_SCRIPT += f'\t<specialKeys xpath="{xpath}" specialChar="{{{value}}}" desc="Implementation step" expResult="NA"></specialKeys>\n'
